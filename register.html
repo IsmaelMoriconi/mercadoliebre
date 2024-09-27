@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuario</title>
+</head>
+<body>
+    <header>
+        <img src="./images/logo-mercado-liebre.svg" alt="logo de mercado liebre" width="75">
+        <h2>Lugar para poner la barra de busqueda</h2>
+        <h3>Comprá en cuotas y sin tarjeta de crédito</h3>
+        <nav>
+            <ul>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Creá tu cuenta</a></li>
+                <li><a href="#">Ingresá</a></li>
+                <li><a href="#">Mis compras</a></li>
+            </ul>
+        </nav>
+        <img src="./images/img-home-banner.jpg" alt="imagen de home banner" width="75">
+    </header>
+    <main>
+        <h1>Registro de usuario</h1>
+        <form action="/" method="post">
+            <div>
+                <label for="name">Ingresar Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Ingrese su Nombre">
+            </div>
+            <br>
+            <div>
+                <label for="last-name">Ingresar Apellido</label>
+                <input type="text" name="last-name" id="last-name" placeholder="Ingrese su Apellido"> 
+            </div>
+            <br>
+            <div>
+                <label for="user">Ingresar Usuario </label>
+                <input type="text" name="user" id="user" placeholder="Ingrese su usuario"> 
+            </div>
+            <br>
+            <div>
+                <label for="email">Ingresar Mail </label>
+                <input type="email" name="email" id="email" placeholder="Ingrese su Gmail">
+            </div>
+            <br>
+            <div>
+                <label for="date">Ingresar fecha de nacimiento</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <br>
+            <div>
+                <label for="home">Ingresar domicilio </label>
+                <input type="text" name="home" id="home" placeholder="Ingrese su domicilio">
+            </div>
+            <div>
+                <label>Seleccione su actividad</label>
+                    <input type="radio" name="opcion" value="Comprar">
+                    Comprar
+
+                    <input type="radio" name="opcion" value="vender">
+                    Vender
+            </div>
+            <br>
+                <h3>Categorias de interes</h3>
+                    <input type="checkbox" name="categoria" value="electro">
+                    Electro
+                <br>
+                <label>
+                    <input type="checkbox" name="categoria" value="moda">
+                    Moda
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="categoria" value="hogar">
+                    Hogar
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="categoria" value="jugueteria">
+                    Juguetería
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="categoria" value="vida_sana">
+                    Vida sana
+                </label>
+                <br>
+                <h3>Foto del usuario</h3>
+                <label for="fotoUsuario">Seleccione una foto</label>
+                <input type="file" id="fotoUsuario" name="fotoUsuario" accept="image/*">
+                <br><br>
+                <label for="contraseña">contraseña</label>
+                <input type="password" id="contraseña" name="contraseña">
+                <br><br>
+                <label for="confirmarcontraseña">Confirmar contraseña</label>
+                <input type="password" id="confirmarcontraseña" name="confirmarcontraseña">
+                <br>
+                <button type="submit" onclick="redireccionar()">Enviar</button>
+                <button type="button" onclick="borrarFormulario()">Borrar</button>
+        </form>
+    </main>
+</body>
+</html>
