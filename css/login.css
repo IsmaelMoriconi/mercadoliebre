@@ -1,0 +1,52 @@
+:root {
+    --var-amarillo: #EAC926;
+    --var-azul: #03264C;
+    --var-celeste: #1259c3;
+    --var-gris-oscuro: #666;
+    --var-gris-claro: #ebebeb;
+    --var-verde: #39b54a;
+}
+
+header{
+background-color:var(--var-amarillo);
+}
+
+nav ul{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+form{
+    text-align: center;
+}
+
+input{
+    width: 57%;
+    margin: 0 auto; 
+    text-align: center; 
+    padding: 10px; 
+    margin-top: 6vh;
+    border-radius: 5px;
+}
+
+button{
+    background-color: var(--var-celeste);
+    color: var(--var-gris-claro);
+    width: 60%;
+    margin: 0 auto; 
+    text-align: center; 
+    padding: 10px; 
+    margin-top: 6vh;
+    border-radius: 5px;
+}
