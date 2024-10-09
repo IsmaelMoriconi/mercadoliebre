@@ -10,7 +10,13 @@
 header{
 background-color:var(--var-amarillo);
 }
-
+.login-header-logo{
+    width: 50%;
+    margin: 2%;
+}
+.login-header-barra-de-busqueda{
+    text-align: center;
+}
 nav ul{
     list-style: none;
     text-decoration: none;
