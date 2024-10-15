@@ -6,33 +6,60 @@
     --var-gris-claro: #ebebeb;
     --var-verde: #39b54a;
 }
-
 header{
-background-color:var(--var-amarillo);
+    background-color: var(--var-amarillo);
+    padding-bottom: 10px;
+  
 }
-.login-header-logo{
+
+.home__header__section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home__header p, nav ul li {
+  font-size: 12px;
+}
+.home__header__logo{
     width: 50%;
-    margin: 2%;
 }
-.login-header-barra-de-busqueda{
+.home__header__barraDeBusquedad{
+    width: 40%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home__header__barraDeBusquedad input{
+    width: 90%;
+}
+
+.fa-magnifying-glass{
+    position: absolute;
+    right: 10%;
+    top: 5px;
+    color: var(--color-Gris-oscuro);
+    font-size: 12px;
+}
+.home__header nav {
+  display: none;
+}
+#leyenda-cuotas{
     text-align: center;
 }
-nav ul{
-    list-style: none;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
+.burger-menu{
+   text-align: center ;
+   color:#ffffff;
+   margin: 10px auto;
 }
-
-nav ul li a {
-    color: black;
-    text-decoration: none;
+.burger-menu i{
+    padding: 10px;
+    background-color: var(--color-Celeste);
+    border-radius: 5px;
 }
-
 form{
     text-align: center;
 }

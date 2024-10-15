@@ -5,30 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="">
 </head>
 
-<body>
-    <header>
-        <img class="login-header-logo"
-        src="./images/logo-mercado-liebre.svg" alt="logo de mercado liebre" width="75">
-        <form class="login-header-barra-de-busqueda"
-        action="/buscar" method="get">
-            <input type="text" name="q" placeholder="Buscar..."></i>
-        </form>
-        <h3>Comprá en cuotas y sin tarjeta de crédito</h3>
-        <br>
-        <nav>
-            <ul>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Tiendas Oficiales</a></li>
-                <li><a href="#">Vender</a></li>
-                <li><a href="#">Ayuda</a></li>
-                <li><a href="#">Creá tu cuenta <i class="fa-regular fa-address-card"></i></a></li>
-                <li><a href="#">Ingresá <i class="fa-solid fa-circle-arrow-left"></i></a></li>
-                <li><a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
-            </ul>
-        </nav>
+<body class="home">
+    <header class="home__header">
+        <section class="home__header__section">
+            <img class="home__header__logo" src="/images/logo-mercado-liebre.svg" alt="Mercado Liebre" />
+            <form class="home__header__barraDeBusquedad" action="/barradebusqueda" method="POST">
+                <label for="busquedad-de-productos"></label>
+                <input type="text" name="busquedad-de-productos" id="busquedad-de-productos"
+                    placeholder="Buscar productos,marcas" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+            <p id="leyenda-cuotas"><i class="fa-solid fa-hand-holding-dollar"></i>
+                Comprá en cuotas y sin tarjeta de crédito
+            </p>
+        </section>
+        <section class="home__header__section__nav">
+            <nav>
+                <ul>
+                    <li><a href=""></a>Ofertas</li>
+                    <li><a href=""></a>Tiendas Oficiales</li>
+                    <li><a href=""></a>Vender</li>
+                    <li><a href=""></a>Ayuda</li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="home__header__section__nav__form">
+                    <li>
+                        <a href=""></a>Creá tu cuenta<i class="fa-solid fa-id-card"></i>
+                    </li>
+                    <li>
+                        <a href=""></a>Ingresá<i class="fa-solid fa-right-to-bracket"></i>
+                    </li>
+                    <li>
+                        <a href=""></a>Mis compras<i class="fas fa-shopping-cart"></i>
+                    </li>
+                </ul>
+            </nav>
+            <div class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </section>
     </header>
     <main>
         <form action="/" method="post">

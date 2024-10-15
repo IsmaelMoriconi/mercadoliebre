@@ -1,14 +1,33 @@
 .home__footer{
-    padding-top: 20px;
+    padding: 14px;
     text-align: center;
     background-color: #fff;
 }
 .home__footer__section i {
     color: var(--color-Celeste);
+    padding: 10px;
+    display: flex;
+    justify-content:center;
 }
 
 #Copyright{
     text-align: left;
     font-size: 14px;
     margin-top: 20px;
+}
+
+
+.footer__links {
+    display: flex;
+    gap: 20px; 
+}
+
+.footer__links a {
+    text-decoration: none;
+    color: var(--color-gris-claro);
+    transition: color 0.3s;
+}
+
+.footer__links a:hover {
+    color: var(--color-Celeste);
 }
